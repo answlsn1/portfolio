@@ -238,6 +238,7 @@ section.main .main_txt_box p {
 /* contact */
 .section5_contact {
     position:relative;
+    height:100vh;
 }
 
 .section5_contact .section_box {
@@ -245,8 +246,8 @@ section.main .main_txt_box p {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: 60% auto;
-
-    height:100vh;
+    min-height:90vh;
+    max-height:100vh;
 }
 
 .section5_contact .cont_box1 {
