@@ -50,6 +50,7 @@ section.main .main_txt_box p {
     border-radius: 15px;
     box-shadow:inset 0px 0px 20px rgba(255,255,255,0.4);
     padding:2rem 1.5rem;
+    min-height:70vh;
 }
 
 /* aboutme */
@@ -70,6 +71,8 @@ section.main .main_txt_box p {
 /* skill */
 .section2_skill .skill {
     padding:0 20px;
+    display: flex;
+    flex-direction: column;
 }
 .section2_skill .skills {
     margin-bottom:30px;
@@ -376,7 +379,7 @@ section.main {
     }
     .section_cont.aboutme {
         border:none;
-        padding:20px 30px 40px;
+        padding:20px 0 40px 70px;
     }
     .section_cont.aboutme > ul {
         display: flex;
@@ -396,8 +399,8 @@ section.main {
         text-align: left;
     }
     .section1_about .aboutme ul li ul li {
-    margin-bottom:60px;
-}
+        margin-bottom:60px;
+    }
     
     /* contact */
     .section5_contact .section_box {
@@ -414,7 +417,22 @@ section.main {
     .logo {margin:40px 0 0 110px;}
     section.main {background-image: url(../images/main_p.jpg);}
     section.main .main_txt_box span.t1200 {display:inline-block;}
-    
+
+    .section1_about{
+        height:auto;
+    }
+    /* skill */
+    .section2_skill .section_cont.skill {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px 60px;
+    }
+    .section2_skill .section_cont.skill .skills {
+        flex: 0 0 calc(50% - 30px);
+    }
+    .section2_skill .section_cont.skill .skill_workflow {
+        flex-basis: 100%;
+    }
 
     /* contact */
     .section5_contact .cont_box1 p {font-size:1rem;}

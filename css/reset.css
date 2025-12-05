@@ -187,7 +187,7 @@ section h2 {
 
 /* Tablet */
 @media (min-width: 768px) {
-  h1 {
+  h1 span {
     font-size: 2.5rem;
   }
 
@@ -206,8 +206,8 @@ section h2 {
     font-size: 1rem;
   }
 
-  h1 {
-    font-size: 3.5rem;
+  h1 span {
+    font-size: 3.8rem;
   }
 
   h2 {
@@ -215,6 +215,6 @@ section h2 {
   }
 
   section {
-    padding: 96px 0;
+    padding: 50px 0;
   }
 }
